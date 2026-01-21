@@ -2,10 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Partner With Us | Royal Saints Academy</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
+    <!-- HEADER -->
     <header>
       <div class="nav">
         <div class="logo">Royal Saints Academy</div>
@@ -17,22 +27,49 @@
       </div>
     </header>
 
-    <div class="container">
+    <!-- PARTNER FORM -->
+    <main class="container">
       <h2 class="section-title">Partner With Us</h2>
 
       <form>
-        <input type="text" placeholder="School Name" required />
-        <input type="text" placeholder="Contact Person" required />
-        <input type="email" placeholder="Email Address" required />
-        <input type="text" placeholder="School Location" />
-        <textarea
-          rows="4"
-          placeholder="Tell us about your pupils and needs"
-        ></textarea>
-        <button class="btn" type="submit">Submit Request</button>
-      </form>
-    </div>
+        <input
+          type="text"
+          placeholder="School Name"
+          aria-label="School Name"
+          required
+        />
 
+        <input
+          type="text"
+          placeholder="Contact Person"
+          aria-label="Contact Person"
+          required
+        />
+
+        <input
+          type="email"
+          placeholder="Email Address"
+          aria-label="Email Address"
+          required
+        />
+
+        <input
+          type="text"
+          placeholder="School Location (City & State)"
+          aria-label="School Location"
+        />
+
+        <textarea
+          rows="5"
+          placeholder="Tell us about your pupils, age range, and preferred class schedule"
+          aria-label="School Needs"
+        ></textarea>
+
+        <button class="btn" type="submit">Submit Partnership Request</button>
+      </form>
+    </main>
+
+    <!-- FOOTER -->
     <footer>
       © 2026 Royal Saints Academy · Let’s bring dance education to your school
     </footer>
