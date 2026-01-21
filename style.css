@@ -42,7 +42,7 @@ header {
   color: #ff6f91;
 }
 
-.nav a {
+.nav nav a {
   margin-left: 20px;
   text-decoration: none;
   color: #333;
@@ -50,7 +50,7 @@ header {
   position: relative;
 }
 
-.nav a::after {
+.nav nav a::after {
   content: "";
   position: absolute;
   width: 0;
@@ -61,7 +61,7 @@ header {
   transition: 0.3s ease;
 }
 
-.nav a:hover::after {
+.nav nav a:hover::after {
   width: 100%;
 }
 
@@ -69,7 +69,7 @@ header {
 .hero {
   background:
     linear-gradient(rgba(255, 111, 145, 0.75), rgba(77, 171, 247, 0.75)),
-    url("hero.jpg") center/cover no-repeat;
+    url("hero.jpg") center / cover no-repeat;
   color: #fff;
   padding: 130px 20px;
   text-align: center;
@@ -98,9 +98,7 @@ header {
   border-radius: 40px;
   font-weight: 600;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .btn:hover {
@@ -264,9 +262,88 @@ footer {
   }
 }
 
-/* RESPONSIVE */
+/* ========================= */
+/* RESPONSIVENESS BALANCED */
+/* ========================= */
+
+/* MOBILE */
 @media (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .nav nav a {
+    margin: 0 10px;
+    font-size: 14px;
+  }
+
+  .hero {
+    padding: 90px 20px;
+  }
+
   .hero h1 {
-    font-size: 32px;
+    font-size: 30px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .btn {
+    padding: 12px 26px;
+    font-size: 14px;
+  }
+
+  .proposal {
+    padding: 30px 20px;
+    margin: 20px;
+  }
+
+  .proposal-header h1 {
+    font-size: 22px;
+  }
+
+  footer {
+    font-size: 13px;
+  }
+}
+
+/* TABLET */
+@media (min-width: 601px) and (max-width: 900px) {
+  .hero {
+    padding: 110px 30px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 17px;
+  }
+
+  .container {
+    padding: 30px 25px;
+  }
+
+  .proposal {
+    padding: 40px 35px;
+  }
+
+  .proposal-header h1 {
+    font-size: 26px;
+  }
+}
+
+/* LARGE SCREENS */
+@media (min-width: 1200px) {
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .container {
+    max-width: 1200px;
   }
 }
