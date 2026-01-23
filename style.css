@@ -309,6 +309,21 @@ footer {
     font-size: 13px;
   }
 }
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+
 
 /* TABLET */
 @media (min-width: 601px) and (max-width: 900px) {
